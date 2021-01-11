@@ -20,6 +20,9 @@ const justify = (line, limit) => {
             }
         })
     }
+    else {
+        ret = "Sorry, minimum limit for this STRING should be " + (wordCharCount + 1) + ".";
+    }
     document.getElementById('result').innerHTML = 
         "Line : " + line + '\n' +
         "Limit : " + limit + '\n' +

@@ -1,4 +1,5 @@
 <script src="spaceAlgo.js"></script>
+
 <h3>Input</h3>
 String : <input type="text" id="line" value="The quick brown fox jumps over the lazy dog."/><br />
 Limit : <input type="number" id="limit" value="60"/>
@@ -6,13 +7,12 @@ Limit : <input type="number" id="limit" value="60"/>
 <hr />
 <h3>Output</h3>
 <pre id="result"></pre>
+
 <script>
-function init() {
-
-
-    const line = document.getElementById('line').value
-    const limit = document.getElementById('limit').value
-    justify(line, limit)
-}
-init();
+    function init() {
+        const line = document.getElementById('line').value
+        const limit = document.getElementById('limit').value
+        justify(line, limit)
+    }
+    init();
 </script>
